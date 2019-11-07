@@ -12,6 +12,6 @@ public class ThreadCreator extends Thread {
     public void run() {
         System.out.println("Nombre: " + getName() + "\n" +
                             "ID: " + getId() + "\n" +
-                            "Prioridad: " + getPriority());
+                            "Prioridad: " + getPriority() + "\n");
     }
 }
