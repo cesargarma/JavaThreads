@@ -17,9 +17,9 @@ public class Hilo extends Thread{
             for (int i = 0; i < 300; i++) {
                 if(number == 1) contador.incrementar();
                 else   contador.decrementar();
-                System.out.println(contador.getNum());
+                //System.out.println(contador.getNum());
             }
         }
-        System.out.println(this.contador.getNum());
+        System.out.println("Hilo " + this.number + ": " + this.contador.getNum());
     }
 }
