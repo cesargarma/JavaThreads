@@ -5,16 +5,16 @@ public class Main {
         ThreadCreator thread1 = new ThreadCreator(1);
         thread1.setPriority(1);
         thread1.setName("Thread-1");
-        thread1.run();
+        thread1.start();
 
         ThreadCreator thread2 = new ThreadCreator(2);
         thread2.setPriority(2);
         thread2.setName("Thread-2");
-        thread2.run();
+        thread2.start();
 
         ThreadCreator thread3 = new ThreadCreator(3);
         thread3.setPriority(3);
         thread3.setName("Thread-3");
-        thread3.run();
+        thread3.start();
     }
 }
