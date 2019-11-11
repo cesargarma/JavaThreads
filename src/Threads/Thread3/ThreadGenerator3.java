@@ -3,7 +3,7 @@ package Threads.Thread3;
 public class ThreadGenerator3 extends Thread{
 
     private int number;
-    public int contador = 0;
+    public long contador = 0;
 
     public ThreadGenerator3(int number){
         this.number = number;
@@ -17,7 +17,7 @@ public class ThreadGenerator3 extends Thread{
         }
     }
 
-    public int getContador(){
+    public long getContador(){
         return contador;
     }
 }
