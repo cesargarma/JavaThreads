@@ -19,12 +19,9 @@ public class Main3 {
         thread3.start();
 
         try {
-            thread1.sleep(10000);
-            System.out.println("Parando Hilo 1");
-            /*thread2.sleep(10000);
-            System.out.println("Parando Hilo 2");
-            thread3.sleep(10000);
-            System.out.println("Parando Hilo 3");*/
+            Thread.sleep(10000);
+            /*thread1.sleep(10000);*/
+            System.out.println("Parando los hilos.");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
