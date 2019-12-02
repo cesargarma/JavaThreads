@@ -13,7 +13,7 @@ public class Cuenta {
 
     public void retirarDinero(int cantidad, String nombrePersona){
         if(cantidad < getSaldo()){
-            System.out.println("La persona " + nombrePersona + "solicita retirar dinero(" + cantidad + "), y si puede hacerlo");
+            System.out.println("La persona " + nombrePersona + " solicita retirar dinero (" + cantidad + "), y si puede hacerlo");
             restar(cantidad);
         }
         else System.out.println(nombrePersona + ": No hay dinero suficiente.");
@@ -26,7 +26,7 @@ public class Cuenta {
             e.printStackTrace();
         }
         saldo -= cantidad;
-        //saldoNegativo();
+        saldoNegativo();
     }
 
     private void saldoNegativo() {
