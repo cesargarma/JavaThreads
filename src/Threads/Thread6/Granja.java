@@ -26,7 +26,7 @@ public class Granja extends Thread{
             try {
                 TimeUnit.SECONDS.sleep(5);
             } catch (InterruptedException e) {
-                e.printStackTrace();
+                System.out.println("Producción de la granja " + this.nombre + " interrumpido.");
             }
         }
     }
