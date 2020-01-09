@@ -9,12 +9,12 @@ public class Almacen {
         this.cantidadActual = cantidadActual;
     }
 
-    public synchronized void addComida(int cantidad){
+    public synchronized void addComida(int cantidad, String nombre){
         int temp = cantidadActual + cantidad;
 
         if(temp <= cantidadMaxima){
             cantidadActual = temp;
-            System.out.println("Se han añadido " + cantidad + " unidades de comida. Ahora tiene: " + cantidadActual);
+            System.out.println("La granja " + nombre + " ha añadido " + cantidad + " unidades de comida. Ahora tiene: " + cantidadActual);
         }
         else{
             cantidadActual = cantidadMaxima;

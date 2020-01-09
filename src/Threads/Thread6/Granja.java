@@ -15,7 +15,7 @@ public class Granja extends Thread{
     }
 
     public void Produccion(){
-        almacen.addComida(extension);
+        almacen.addComida(extension, this.nombre);
 
     }
 
@@ -24,7 +24,7 @@ public class Granja extends Thread{
         while (true) {
             this.Produccion();
             try {
-                TimeUnit.SECONDS.sleep(5);
+                TimeUnit.SECONDS.sleep(3);
             } catch (InterruptedException e) {
                 System.out.println("Producción de la granja " + this.nombre + " interrumpido.");
             }
